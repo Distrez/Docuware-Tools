@@ -1,3 +1,5 @@
+/* You can use this as is. Used to show a user and its relations. This script matches tables together to provide useful metrics such as: User, Email, Creation date, Last password date. */
+
 WITH userbase AS (
       SELECT
           u.[uid],
