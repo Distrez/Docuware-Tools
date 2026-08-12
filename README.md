@@ -1,5 +1,11 @@
 # Docuware-Tools
 Useful Scripts, Tools, solutions for Docuware.
+  - Use the respective folders.
+## SQL-Queries
+  - Audit Report
+  - Delete UIDs
+  - Find UID
+  - Import Speed of a file cabinet.
 
 # General-Scripts  #
 ## IIS AppPool PS script that allows you to change all of Docuware App Pools with ease.
