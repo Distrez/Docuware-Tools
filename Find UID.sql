@@ -1,3 +1,17 @@
+/* Good Query to see where a specific UID resides. Good to use if the Delete UID query misses a table 
+Alternatively you can also run the following query to see what tables the UID column is located.
+
+ SELECT
+    TABLE_SCHEMA,
+    TABLE_NAME,
+    COLUMN_NAME,
+    DATA_TYPE
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE COLUMN_NAME = 'UID'
+ORDER BY TABLE_SCHEMA, TABLE_NAME;
+
+*/
+
 SET NOCOUNT ON;
 
 DECLARE @SearchUID INT = 4;
