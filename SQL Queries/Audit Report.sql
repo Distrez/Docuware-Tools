@@ -31,19 +31,7 @@ WITH userbase AS (
       UNION
       SELECT [uid], CAST([UserLogin] AS nvarchar(256)) COLLATE SQL_Latin1_General_CP1_CI_AS FROM userbase
       UNION
-      SELECT [uid], CAST([UserName] + '@cfworks.com' AS nvarchar(256)) COLLATE SQL_Latin1_General_CP1_CI_AS FROM userbase
-      UNION
-      SELECT [uid], CAST([UserName] + '@precastcorp.com' AS nvarchar(256)) COLLATE SQL_Latin1_General_CP1_CI_AS FROM userbase
-      UNION
-      SELECT [uid], CAST([UserName] + '@wyman.com' AS nvarchar(256)) COLLATE SQL_Latin1_General_CP1_CI_AS FROM userbase
-      UNION
       SELECT [uid], CAST([OldUserName] AS nvarchar(256)) COLLATE SQL_Latin1_General_CP1_CI_AS FROM renames
-      UNION
-      SELECT [uid], CAST([OldUserName] + '@cfworks.com' AS nvarchar(256)) COLLATE SQL_Latin1_General_CP1_CI_AS FROM renames
-      UNION
-      SELECT [uid], CAST([OldUserName] + '@precastcorp.com' AS nvarchar(256)) COLLATE SQL_Latin1_General_CP1_CI_AS FROM renames
-      UNION
-      SELECT [uid], CAST([OldUserName] + '@wyman.com' AS nvarchar(256)) COLLATE SQL_Latin1_General_CP1_CI_AS FROM renames
   ),
 
   audit_summary AS (
