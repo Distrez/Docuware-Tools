@@ -2,10 +2,13 @@
 Useful Scripts, Tools, solutions for Docuware.
   - Use the respective folders.
 ## SQL-Queries
-  - Audit Report
+  - Audit Report: Matches users, emails, last password change, when the account was first created
+  - Change file cabinet owner
   - Delete UIDs
   - Find UID
-  - Import Speed of a file cabinet.
+  - Desktop Import Speed of a file cabinet.
+  - Storage Space: Checks easy areas where users can reduce storage space on their Docuware database.
+  - dwcheck: Provides an initial check of a Docuware System. Shows valuable information to troubleshooting a Docuware system.
 
 # General-Scripts  #
 ## IIS AppPool PS script that allows you to change all of Docuware App Pools with ease.
