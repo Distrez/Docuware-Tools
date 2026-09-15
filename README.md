@@ -9,6 +9,7 @@ Useful Scripts, Tools, solutions for Docuware.
   - Desktop Import Speed of a file cabinet.
   - Storage Space: Checks easy areas where users can reduce storage space on their Docuware database.
   - dwcheck: Provides an initial check of a Docuware System. Shows valuable information to troubleshooting a Docuware system.
+  - Running Process KBA-36266
 
 # General-Scripts  #
 ## IIS AppPool PS script that allows you to change all of Docuware App Pools with ease.
@@ -24,4 +25,11 @@ Useful Scripts, Tools, solutions for Docuware.
   - https://support.docuware.com/en-us/knowledgebase/article/KBA-36256
   - Searches for ALL docuware.dal.dll.config files in the C: default location.
   - I would make sure to read the KBA before applying to understand the ramifications but this script will allow you to breeze through this.
-  
+## Total Count Limit Search in Docuware (Pagination)
+  - Limits Search count in Docuware to 10,000 records. (Adjustable in the code)
+  - Copies dwmachine.config as a .bak and creates a Docuware.content.settings file
+  - https://support.docuware.com/en-us/knowledgebase/article/KBA-37189
+
+#### Possible bugs:
+  - Can't run the scripts as is. May need to copy the script and paste into powershell.
+
