@@ -52,6 +52,7 @@ public class LogonChecker {
 # -----------------------------
 # GET USER INPUT
 # -----------------------------
+Write-Warning "--- Make sure to Run this with Elevated permissions! IISReset after. ---"
 Write-Host "`n--- DocuWare App Pool Identity Update ---" -ForegroundColor Cyan
 
 $username = Read-Host "Enter the username (Example: .\admin or domain\user)"
@@ -69,12 +70,12 @@ Write-Host "`n--- Checking Credentials ---`n" -ForegroundColor Cyan
 # VALIDATE CREDENTIALS
 # -----------------------------
 if (-not (Test-UserCredentials -Username $username -Password $password)) {
-    Write-Host "✗ ERROR: Invalid username or password. Stopping script!" -ForegroundColor Red
+    Write-Host "ERROR: Invalid username or password. Stopping script!" -ForegroundColor Red
     Enter-Host "Press anything to exit"
 	Return
 }
 
-Write-Host "✔ Credentials are valid. Proceeding..." -ForegroundColor Green
+Write-Host "Credentials are valid. Proceeding..." -ForegroundColor Green
 
 
 # -----------------------------
@@ -102,7 +103,7 @@ foreach ($pool in $appPools) {
 
     $demoPool | Set-Item
 
-    Write-Host "✔ Updated $($pool.Name)" -ForegroundColor Green
+    Write-Host "Updated $($pool.Name)" -ForegroundColor Green
 }
 
 Write-Host "`n--- DONE ---`n" -ForegroundColor Cyan
