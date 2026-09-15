@@ -340,7 +340,7 @@ Write-Host "Completed." -ForegroundColor Cyan
 Write-Host ("  Patched:              {0}" -f $patched)
 Write-Host ("  AlreadyCompliant:     {0}" -f $compliant)
 Write-Host ("  MissingDataSettings:  {0}" -f $missing)
-Write-Host ("  Converted (BOM->UTF8 no BOM): {0}" -f $converted)
-Write-Host ("  Skipped (no BOM):     {0}" -f $skipped)
+# Write-Host ("  Converted (BOM->UTF8 no BOM): {0}" -f $converted)
+# Write-Host ("  Skipped (no BOM):     {0}" -f $skipped)
 Write-Host ("  Errors:               {0}" -f $errors) -ForegroundColor ($(if($errors){'Red'}else{'Gray'}))
 Write-Host "Log written to: $csvPath" -ForegroundColor Green
